@@ -182,4 +182,115 @@
    }
  }
 
+ :root{
+  --font-family: 'Poppins', sans-serif;
+  --font-family-alt: 'Questrial', sans-serif;
+ }
+
+ body{
+  font-family: var(--font-family);
+  font-weight: 400;
+ }
+
+ a{
+  text-decoration: none;
+ }
+
+ .container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+ }
+
+ .header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ .header{
+  position: absolute;
+  padding: 24px 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  
+ }
+
+ .header-burger-button{
+  position: relative;
+  background-color: #F5F6F7;
+  width: 40px;
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 50%;
+  
+ }
+
+ .header-burger-line{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+ /* .header-burger-button::after{
+  content: "";
+  background: url('./icons/burger-lines.svg');
+ } */
+
+ .hero{
+  padding-top: 189px;
+  padding-bottom: 100px;
+  background: url('./images/Slider.jpg') center/cover no-repeat;
+  min-height: 811px;
+  color: #fff;
+ }
+
+ .hero-content{
+  max-width: 616px;
+ }
+
+ .hero-subtitle{
+  display: inline-flex;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 21px;
+ }
+
+ .hero-title{
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.23;
+  margin-bottom: 24px;
+ }
+
+ .hero-describe{
+  font-size: 16px;
+  line-height: 1.62;
+  margin-bottom: 45px;
+ }
+
+ .hero-link{
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  display: inline-flex;
+  position: relative;
+  color:#ffd723;
+ }
+
+ .hero-link svg{
+  width: 12px;
+  aspect-ratio: 1;
+  fill: currentColor;
+  transform: translateY(-1px);
+ }
+
+ .hero-link span{
+  text-indent: 10px;
+  border-bottom: 1px solid currentColor;
+ }
+ 
+
  
