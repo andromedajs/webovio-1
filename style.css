@@ -190,6 +190,7 @@
  body{
   font-family: var(--font-family);
   font-weight: 400;
+  margin: 0;
  }
 
  a{
@@ -201,6 +202,29 @@
   margin: 0 auto;
   padding: 0 15px;
  }
+
+ .link{
+  display: inline-flex;
+  position: relative;
+  transition-duration: 0.2s;
+  font-family: var(--font-family-alt);
+  font-weight: 700;
+  font-size: 16px;
+ }
+
+ .link svg{
+  width: 12px;
+  aspect-ratio: 1;
+  fill: currentColor;
+  transform: translateY(-1px);
+ }
+
+ .link span{
+  text-indent: 10px;
+  border-bottom: 1px solid currentColor;
+ }
+
+
 
  .header-container{
   display: flex;
@@ -224,6 +248,12 @@
   aspect-ratio: 1;
   border: none;
   border-radius: 50%;
+  transition-duration: 0.2s;
+  
+ }
+
+ .header-burger-button:hover{
+  background-color: #D4D6D4;
   
  }
 
@@ -275,9 +305,12 @@
   font-size: 16px;
   line-height: 1;
   font-weight: 700;
-  display: inline-flex;
-  position: relative;
   color:#ffd723;
+  transition-duration: 0.2s;
+ }
+
+ .hero-link:hover{
+  color: #D4D6D4;
  }
 
  .hero-link svg{
@@ -291,6 +324,83 @@
   text-indent: 10px;
   border-bottom: 1px solid currentColor;
  }
+
+ .tips{
+  padding-top: 150px;
+  padding-bottom: 150px;
+ }
+
+ .tips-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.28;
+  color: #4d533c;
+  max-width: 611px;
+  margin-bottom: 60px;
+ }
+
+ .tips-list{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+ }
+
+ .tips-list-item{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+ }
+
+ .tips-list-title{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.42;
+  text-transform:uppercase;
+  color: #4d533c;
+  margin: 0;
+  margin-bottom: 20px;
+ }
+
+ .tips-list-describe{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  color: rgba(33, 56, 66, 0.6);
+  margin: 0;
+  margin-bottom: 56px;
+  max-width: 194px;
+ }
+
+ .tips-list-link{
+  margin-top: auto;
+  margin-bottom: 0;
+  color: #d4d6d4;
+ }
+
+ .tips-list-link:hover{
+  color: #ffd723;
+ } 
+
+@media (max-width:992px) {
+  .tips-list{
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+   }
+
+  .tips-list-describe{
+    max-width: none;
+  }
+}
+
+@media (max-width:375px) {
+  .tips-list{
+    grid-template-columns: repeat(1, 1fr);
+   }
+
+  
+}
  
 
  
